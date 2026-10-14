@@ -32,7 +32,8 @@
 #    define CAPS_LOCK_INDEX 62
 
 #    define PROFILE_LED_MATRIX_LIST \
-        { 79, 80, 81 }
+        { 55, 56, 57 }
 
 #endif
 
+#define CUSTOM_BT_NAME "Chloe's Q6 HE"

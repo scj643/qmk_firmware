@@ -163,7 +163,11 @@ bool process_record_keychron_wireless(uint16_t keycode, keyrecord_t *record) {
 #ifdef LK_WIRELESS_ENABLE
 void lkbt51_param_init(void) {
     /* Set bluetooth device name */
+    #ifdef CUSTOM_BT_NAME
+    lkbt51_set_local_name(CUSTOM_BT_NAME);
+    #else
     lkbt51_set_local_name(PRODUCT);
+    #endif
     wait_ms(3);
     // clang-format off
     /* Set bluetooth parameters */
